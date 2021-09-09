@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions JS</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Functions</h1>
+    <button onclick="showAlert()">Click Me</button>
+    
+    <button value="blue" onclick="ChangeColor(value)">blue</button>
+    
+
+
+
+    <script>
+        
+        const ChangeColor = ( color ) =>{
+            document.body.style.backgroundColor = color; 
+        }
+       
+
+        //Declarar nuestra función
+        function saludar(){
+            //Código
+            return "Hola";
+        }
+        const saludar2 = ( nombre, edad, estado ) =>{
+            return `Hola mi nombre es ${nombre}, tengo ${edad} y soy de ${Mérida}`;
+
+            console.log(saludar2 ('Denisse', 16, 'Mérida'));
+        }
+        const suma = (num1, num2 ) =>{
+            return num1 + num2
+        }
+        // arrow fuctions / funciones de flecha
+        const despedida = () =>{
+            console.log("Adiós"); 
+        }
+        const showAlert = () =>{
+            alert("Bobo");
+        }
+
+        //Función con parámetro
+        const Netflix = ( BobSponja ) =>{
+            console.log( "Hoy estuve viendo " + BobSponja );
+
+        }
+        // Crear Parámetros
+        const saludaramigo = ( saludo, amigo ) =>{
+            console.log( saludo, amigo  );
+        }
+
+        const despedidaAmigo = ( despedida="Nos vemos", amigo="Wangji") =>{
+            console.log(despedida, amigo);
+        }
+
+              //Llamar a la función
+        // LLAMAR            ARGUMENTOS
+        saludar();
+        despedida();
+        Netflix("Bob Esponja");
+        saludaramigo( "Buenos días", "Lan Wangji");
+        despedidaAmigo("Adiós", "Mi vida");
+        console.log( saludar2());
+        let resultadoSuma = suma(10, 5);
+        console.log( resultadoSuma );
+
+        //EJERCICIO
+
+        
+
+    
+
+
+    </script>
+    
+</body>
+</html>
